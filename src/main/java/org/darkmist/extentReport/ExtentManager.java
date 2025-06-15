@@ -7,16 +7,12 @@ import com.aventstack.extentreports.reporter.configuration.Theme;
 
 import java.text.SimpleDateFormat;
 import java.util.Date;
-import java.util.Objects;
 
 public class ExtentManager {
 
     private static ExtentReports extent;
     private static ExtentTest currentTest;
 
-    private static int passCount = 0;
-    private static int failCount = 0;
-    private static int skipCount = 0;
 
     public static void initReport() {
         if (extent == null) {

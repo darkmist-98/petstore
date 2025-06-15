@@ -1,0 +1,16 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+
+<suite name="Petstore">
+
+    <listeners>
+        <listener class-name="org.darkmist.listeners.Listener"/>
+    </listeners>
+
+    <test name="Smoke">
+        <classes>
+            <class name="org.darkmist.tests.LoginTest"/>
+            <class name="org.darkmist.tests.UserTest"/>
+        </classes>
+    </test>
+
+</suite>
